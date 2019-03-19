@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/barraPesquisar"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -43,6 +43,30 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/barraPesquisar"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butaoFestivais"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="Festivais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraPesquisar" />
+
+    <Button
+        android:id="@+id/butaoFuncionarios"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Funcionários"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butaoFestivais" />
 </androidx.constraintlayout.widget.ConstraintLayout>
