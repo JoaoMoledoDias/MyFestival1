@@ -11,8 +11,8 @@
         android:id="@+id/textView"
         android:layout_width="227dp"
         android:layout_height="40dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="120dp"
         android:text="My Festival"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorAccent"
@@ -22,9 +22,9 @@
 
     <EditText
         android:id="@+id/barraPesquisar"
-        android:layout_width="244dp"
+        android:layout_width="214dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="92dp"
         android:contentDescription="Pesquisar..."
         android:ems="10"
         android:inputType="textPersonName"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/butaopesquisa"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="232dp"
@@ -44,7 +44,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toEndOf="@+id/barraPesquisar"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="displayToast"/>
 
     <Button
         android:id="@+id/butaoFestivais"
@@ -56,7 +57,9 @@
         android:text="Festivais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraPesquisar" />
+        app:layout_constraintTop_toBottomOf="@+id/barraPesquisar"
+        android:onClick="displayToast1"/>
+
 
     <Button
         android:id="@+id/butaoFuncionarios"
@@ -68,5 +71,6 @@
         android:text="Funcionários"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/butaoFestivais" />
+        app:layout_constraintTop_toBottomOf="@+id/butaoFestivais"
+        android:onClick="displayToast2"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
