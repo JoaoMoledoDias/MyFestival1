@@ -10,13 +10,15 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="227dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="120dp"
-        android:text="My Festival"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_height="58dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:text="    My Festival"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorAccent"
-        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,28 +26,28 @@
         android:id="@+id/barraPesquisar"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="56dp"
         android:contentDescription="Pesquisar..."
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/butaopesquisa"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Pesquisar..." />
+        android:hint= "Pesquisar..." />
 
     <Button
         android:id="@+id/butaopesquisa"
-        android:layout_width="100dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="232dp"
         android:layout_marginEnd="8dp"
+        android:onClick="displayToast"
         android:text="OK"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toEndOf="@+id/barraPesquisar"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="displayToast"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/butaoFestivais"
