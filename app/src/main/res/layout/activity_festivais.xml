@@ -13,7 +13,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="8dp"
-        android:text="Adicionar um Novo Festival"
+        android:text="@string/adicionar_um_novo_festival"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

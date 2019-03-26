@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyFestival</string>
+    <string name="my_festival">My_Festival</string>
+    <string name="pagamentos">Payments</string>
+    <string name="funcionarios">Employees</string>
+    <string name="festivais">Festivals</string>
+    <string name="ok">OK</string>
+    <string name="pesquisar">Search...</string>
+    <string name="adicionar_um_novo_festival">Add a new Festival</string>
+    <string name="guardar">Save</string>
+    <string name="local_do_festival">Festival Venue</string>
+    <string name="cancelar">Cancel</string>
+    <string name="nome_do_festival">Festival Name</string>
+    <string name="message_error">Invalid Field</string>
+</resources>

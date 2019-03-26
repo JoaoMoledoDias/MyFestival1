@@ -14,7 +14,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="8dp"
-        android:text="    My Festival"
+        android:text="@string/my_festival"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/butaopesquisa"
         app:layout_constraintStart_toStartOf="parent"
-        android:hint= "Pesquisar..." />
+        android:hint= "@string/pesquisar" />
 
     <Button
         android:id="@+id/butaopesquisa"
@@ -42,7 +42,7 @@
         android:layout_marginTop="232dp"
         android:layout_marginEnd="8dp"
         android:onClick="displayToast"
-        android:text="OK"
+        android:text="@string/ok"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
@@ -56,7 +56,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
-        android:text="Festivais"
+        android:text="@string/festivais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraPesquisar"
@@ -70,7 +70,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
-        android:text="Funcionários"
+        android:text="@string/funcionarios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/butaoFestivais"
@@ -83,7 +83,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
-        android:text="Pagamentos"
+        android:text="@string/pagamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

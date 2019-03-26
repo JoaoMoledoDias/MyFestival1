@@ -31,7 +31,7 @@ public class adicionarFestival extends AppCompatActivity {
             String nomeFes = nomeFestival.getText().toString();
 
             if (nomeFes.trim().length() == 0) {
-                nomeFestival.setError("Campo inválido");
+                nomeFestival.setError(getString(R.string.message_error));
                 nomeFestival.requestFocus();
                 return;
             }
@@ -40,7 +40,7 @@ public class adicionarFestival extends AppCompatActivity {
             String localFes = localFestival.getText().toString();
 
         if (localFes.trim().length() == 0) {
-            localFestival.setError("Campo inválido");
+            localFestival.setError(getString(R.string.message_error));
             localFestival.requestFocus();
             return;
         }
