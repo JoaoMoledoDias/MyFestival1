@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyFestival</string>
+    <string name="message_required" />
 </resources>
