@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Festivais extends AppCompatActivity {
     private Button button;
@@ -22,13 +23,42 @@ public class Festivais extends AppCompatActivity {
                 opennadicionarFestival();
             }
         });
+
+        button=findViewById(R.id.delete);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDelete();
+            }
+        });
+
+        button=findViewById(R.id.editar);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEdit();
+            }
+        });
+
+
+
     }
+
+
 
     public void opennadicionarFestival(){
         Intent intent = new Intent(this,adicionarFestival.class);
         startActivity(intent);
     }
-
-
+    public void openDelete(){
+        Intent intent = new Intent(this,Delete.class);
+        startActivity(intent);
+    }
+    public void openEdit(){
+        Intent intent = new Intent(this,Edit.class);
+        startActivity(intent);
+    }
 
 }
+
+

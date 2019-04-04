@@ -1,15 +1,19 @@
 <resources>
     <string name="app_name">MyFestival</string>
     <string name="my_festival">My_Festival</string>
-    <string name="pagamentos">Pagamentos</string>
-    <string name="funcionarios">Funcionários</string>
-    <string name="festivais">Festivais</string>
+    <string name="pagamentos">Payments</string>
+    <string name="funcionarios">Employees</string>
+    <string name="festivais">Festivals</string>
     <string name="ok">OK</string>
-    <string name="pesquisar">Pesquisar...</string>
-    <string name="adicionar_um_novo_festival">Adicionar um novo Festival</string>
-    <string name="guardar">Guardar</string>
-    <string name="local_do_festival">Local do Festival</string>
-    <string name="cancelar">Cancelar</string>
-    <string name="nome_do_festival">Nome do Festival</string>
-    <string name="message_error">Campo Inválido</string>
+    <string name="pesquisar">Search...</string>
+    <string name="adicionar_um_novo_festival">Add a new Festival</string>
+    <string name="guardar">Save</string>
+    <string name="local_do_festival">Festival Venue</string>
+    <string name="cancelar">Cancel</string>
+    <string name="nome_do_festival">Festival Name</string>
+    <string name="message_error">Required Field</string>
+    <string name="Save_message">Saved Festival With Sucess</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="canceled">Canceled</string>
 </resources>

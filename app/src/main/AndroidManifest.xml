@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".adicionarFestival"></activity>
+        <activity android:name=".Edit"></activity>
+        <activity android:name=".Delete" />
+        <activity android:name=".adicionarFestival" />
         <activity android:name=".Festivais" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -6,53 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".adicionarFestival">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nomeFestival"
-        android:layout_width="303dp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/width_new"
+        android:layout_height="60dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/nome_do_festival"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Festival Name"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/localFestival"
+        android:layout_width="@dimen/width_new"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeFestival">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Festival Venue"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Date"
+        android:layout_width="@dimen/width_new"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/localFestival">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="282dp"
+            android:layout_height="56dp"
+            android:hint="Select Date(DD/MM/YYYY)"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/butaoGuardarFes"
         android:layout_width="148dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="112dp"
         android:onClick="GuardarFestival"
         android:text="@string/guardar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeFestival" />
+        app:layout_constraintTop_toBottomOf="@+id/Date" />
 
     <Button
         android:id="@+id/butaoCancelar"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="52dp"
         android:text="@string/cancelar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeFestival" />
+        app:layout_constraintTop_toBottomOf="@+id/Date" />
 
-    <EditText
-        android:id="@+id/localFestival"
-        android:layout_width="306dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/local_do_festival"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeFestival" />
 </androidx.constraintlayout.widget.ConstraintLayout>

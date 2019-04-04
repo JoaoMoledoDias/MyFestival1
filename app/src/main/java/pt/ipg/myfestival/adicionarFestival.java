@@ -2,16 +2,20 @@ package pt.ipg.myfestival;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Calendar;
 
 public class adicionarFestival extends AppCompatActivity {
     private Button button;
 
     @Override
+   
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_festival);
@@ -33,7 +37,6 @@ public class adicionarFestival extends AppCompatActivity {
             if (nomeFes.trim().length() == 0) {
                 nomeFestival.setError(getString(R.string.message_error));
                 nomeFestival.requestFocus();
-                return;
             }
 
             EditText localFestival = findViewById(R.id.localFestival);
@@ -44,17 +47,11 @@ public class adicionarFestival extends AppCompatActivity {
             localFestival.requestFocus();
             return;
         }
-
-        button = (Button) findViewById(R.id.butaoGuardarFes);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
                 finish();
-                Toast.makeText(adicionarFestival.this,"Festival Guardado com Sucesso",Toast.LENGTH_LONG).show();
+                Toast.makeText(adicionarFestival.this, R.string.Save_message,Toast.LENGTH_LONG).show();
             }
-        });
         }
 
-    }
+
 
 
