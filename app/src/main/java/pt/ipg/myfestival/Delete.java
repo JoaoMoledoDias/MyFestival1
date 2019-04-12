@@ -20,6 +20,7 @@ public class Delete extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                Toast.makeText(Delete.this,"Canceled",Toast.LENGTH_LONG).show();
             }
         });
 

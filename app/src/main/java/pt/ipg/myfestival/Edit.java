@@ -20,6 +20,7 @@ public class Edit extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                Toast.makeText(Edit.this,"Canceled",Toast.LENGTH_LONG).show();
             }
         });
 
