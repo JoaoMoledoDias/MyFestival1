@@ -28,7 +28,7 @@ public class Festivais extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDelete();
+                openDeleteFestivais();
             }
         });
 
@@ -47,8 +47,8 @@ public class Festivais extends AppCompatActivity {
         Intent intent = new Intent(this,adicionarFestival.class);
         startActivity(intent);
     }
-    public void openDelete(){
-        Intent intent = new Intent(this,Delete.class);
+    public void openDeleteFestivais(){
+        Intent intent = new Intent(this,DeleteFestivais.class);
         startActivity(intent);
     }
     public void openEditarFestivais(){
