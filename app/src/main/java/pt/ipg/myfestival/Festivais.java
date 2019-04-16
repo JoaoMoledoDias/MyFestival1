@@ -36,15 +36,12 @@ public class Festivais extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openEdit();
+                openEditarFestivais();
             }
         });
 
 
-
     }
-
-
 
     public void opennadicionarFestival(){
         Intent intent = new Intent(this,adicionarFestival.class);
@@ -54,9 +51,9 @@ public class Festivais extends AppCompatActivity {
         Intent intent = new Intent(this,Delete.class);
         startActivity(intent);
     }
-    public void openEdit(){
-        Intent intent = new Intent(this,Edit.class);
-        startActivity(intent);
+    public void openEditarFestivais(){
+       Intent intent = new Intent(this,EditarFestivais.class);
+       startActivity(intent);
     }
 
 }
