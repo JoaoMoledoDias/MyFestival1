@@ -23,10 +23,23 @@ public class MainActivity extends AppCompatActivity {
                 opennFestivais();
             }
         });
+
+        button=(Button)findViewById(R.id.butaoFuncionarios);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEmployees();
+            }
+        });
     }
 
     public void opennFestivais(){
         Intent intent= new Intent(this,Festivais.class);
+        startActivity(intent);
+    }
+
+    public void openEmployees(){
+        Intent intent = new Intent(this,Employee.class);
         startActivity(intent);
     }
 

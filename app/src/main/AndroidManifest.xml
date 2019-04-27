@@ -14,10 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DeleteFestivais"></activity>
+        <activity android:name=".DeleteEmployee"></activity>
+        <activity android:name=".EditEmployee" />
+        <activity android:name=".Employee" />
+        <activity android:name=".addemployees" />
+        <activity android:name=".DeleteFestivais" />
         <activity android:name=".EditarFestivais" />
-        <activity android:name=".Edit" />
-        <activity android:name=".Delete" />
         <activity android:name=".adicionarFestival" />
         <activity android:name=".Festivais" />
         <activity android:name=".MainActivity">
