@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 openEmployees();
             }
         });
+
+        button=(Button)findViewById(R.id.butaoPagamentos);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPayments();
+            }
+        });
     }
 
     public void opennFestivais(){
@@ -42,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Employee.class);
         startActivity(intent);
     }
-
+    public void openPayments(){
+        Intent intent = new Intent(this,Payments.class);
+        startActivity(intent);
+    }
 
     public void displayToast(View view) {
         Toast.makeText(MainActivity.this,"0 resultados encontrados",Toast.LENGTH_LONG).show();

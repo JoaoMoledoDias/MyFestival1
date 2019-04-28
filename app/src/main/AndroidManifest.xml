@@ -14,7 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DeleteEmployee"></activity>
+        <activity android:name=".DeletePayment"></activity>
+        <activity android:name=".EditPayment" />
+        <activity android:name=".NewPayment" />
+        <activity android:name=".Payments" />
+        <activity android:name=".DeleteEmployee" />
         <activity android:name=".EditEmployee" />
         <activity android:name=".Employee" />
         <activity android:name=".addemployees" />
