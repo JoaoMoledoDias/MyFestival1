@@ -7,7 +7,7 @@
     tools:context=".EditEmployee">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edinameemployee"
+        android:id="@+id/edinamemployee"
         android:layout_width="256dp"
         android:layout_height="50dp"
         android:layout_marginStart="76dp"
@@ -16,51 +16,55 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edinameemployee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editemployeeadress"
+        android:id="@+id/editemployeadress"
         android:layout_width="256dp"
         android:layout_height="39dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edinameemployee">
+        app:layout_constraintTop_toBottomOf="@+id/edinamemployee">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editemployeeadress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Adress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editemployeeemail"
+        android:id="@+id/editemployeemail"
         android:layout_width="262dp"
         android:layout_height="61dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editemployeeadress">
+        app:layout_constraintTop_toBottomOf="@+id/editemployeadress">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editemployeeemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-mail" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editphoneemployee"
+        android:id="@+id/editphoneemploye"
         android:layout_width="256dp"
         android:layout_height="38dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editemployeeemail">
+        app:layout_constraintTop_toBottomOf="@+id/editemployeemail">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editphoneemployee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number" />
@@ -72,9 +76,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="88dp"
+        android:onClick="saveemployeeedit"
         android:text="Save"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editphoneemployee" />
+        app:layout_constraintTop_toBottomOf="@+id/editphoneemploye" />
 
     <Button
         android:id="@+id/editcancelemployee"
@@ -84,6 +89,6 @@
         android:layout_marginEnd="76dp"
         android:text="Cancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editphoneemployee" />
+        app:layout_constraintTop_toBottomOf="@+id/editphoneemploye" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

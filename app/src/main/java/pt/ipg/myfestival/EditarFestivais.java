@@ -108,6 +108,6 @@ public class EditarFestivais extends AppCompatActivity {
         }
 
         finish();
-        Toast.makeText(EditarFestivais.this, R.string.Save_message,Toast.LENGTH_LONG).show();
+        Toast.makeText(EditarFestivais.this,pt.ipg.myfestival.R.string.messageedited,Toast.LENGTH_LONG).show();
     }
 }

@@ -25,7 +25,7 @@ public class addemployees extends AppCompatActivity {
         });
     }
 
-    public void SaveEmployees (View view) {
+    public void SaveEmployee (View view) {
         EditText nameemployee = findViewById(R.id.nameemployee);
         String Namemploye = nameemployee.getText().toString();
 

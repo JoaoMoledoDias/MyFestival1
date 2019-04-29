@@ -20,4 +20,5 @@
     <string name="end_date">End Date</string>
     <string name="festival_venue">Festival Venue</string>
     <string name="festival_name">Festival Name</string>
+    <string name="messageedited">Edited with sucess</string>
 </resources>
