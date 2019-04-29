@@ -31,7 +31,7 @@ public class EditEmployee extends AppCompatActivity {
         String nameemp = edinameemployee.getText().toString();
 
         if(nameemp.isEmpty()){
-            edinameemployee.setError("Required Field");
+            edinameemployee.setError(getString(R.string.message_error));
             edinameemployee.requestFocus();
             return;
         }
@@ -40,7 +40,7 @@ public class EditEmployee extends AppCompatActivity {
         String adressemp = editemployeeadress.getText().toString();
 
         if(adressemp.isEmpty()){
-            editemployeeadress.setError("Required Field");
+            editemployeeadress.setError(getString(R.string.message_error));
             editemployeeadress.requestFocus();
             return;
         }
@@ -49,7 +49,7 @@ public class EditEmployee extends AppCompatActivity {
         String emailemp = editemployeeemail.getText().toString();
 
         if(emailemp.isEmpty()){
-            editemployeeemail.setError("Required Field");
+            editemployeeemail.setError(getString(R.string.message_error));
             editemployeeemail.requestFocus();
             return;
         }
@@ -58,12 +58,12 @@ public class EditEmployee extends AppCompatActivity {
         String phoneemp = editphoneemployee.getText().toString();
 
         if(phoneemp.isEmpty()){
-            editphoneemployee.setError("Required Fiel");
+            editphoneemployee.setError(getString(R.string.message_error));;
             editphoneemployee.requestFocus();
             return;
         }
 
         finish();
-        Toast.makeText(EditEmployee.this,"Edited Employee with Sucess",Toast.LENGTH_LONG).show();
+        Toast.makeText(EditEmployee.this, R.string.Edited_message,Toast.LENGTH_LONG).show();
     }
 }

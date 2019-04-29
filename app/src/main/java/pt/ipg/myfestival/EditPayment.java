@@ -29,7 +29,7 @@ public class EditPayment extends AppCompatActivity {
         String daysfes = daysoffestival.getText().toString();
 
         if(daysfes.isEmpty()){
-            daysoffestival.setError("Required Field");
+            daysoffestival.setError(getString(R.string.message_error));
             daysoffestival.requestFocus();
             return;
         }
@@ -38,7 +38,7 @@ public class EditPayment extends AppCompatActivity {
         String hourday = hoursperday.getText().toString();
 
         if(hourday.isEmpty()) {
-            hoursperday.setError("Required Fiel");
+            hoursperday.setError(getString(R.string.message_error));
             hoursperday.requestFocus();
             return;
         }
@@ -47,13 +47,13 @@ public class EditPayment extends AppCompatActivity {
         String pay = payment.getText().toString();
 
         if(pay.isEmpty()){
-            payment.setError("Required Fiel");
+            payment.setError(getString(R.string.message_error));
             payment.requestFocus();
             return;
         }
 
         finish();
-        Toast.makeText(EditPayment.this,"New Payment Edited With Sucess",Toast.LENGTH_LONG).show();
+        Toast.makeText(EditPayment.this,R.string.Edited_message,Toast.LENGTH_LONG).show();
     }
 }
 

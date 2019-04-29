@@ -62,7 +62,7 @@ public class addemployees extends AppCompatActivity {
             return;
         }
                     finish();
-                    Toast.makeText(addemployees.this, "Employee saved with sucess", Toast.LENGTH_LONG).show();
+                    Toast.makeText(addemployees.this, R.string.Saved_message, Toast.LENGTH_LONG).show();
              }
 
         }

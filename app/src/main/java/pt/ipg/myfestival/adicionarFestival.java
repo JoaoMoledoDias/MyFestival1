@@ -107,7 +107,7 @@ public class adicionarFestival extends AppCompatActivity {
         }
 
                 finish();
-                Toast.makeText(adicionarFestival.this, R.string.Save_message,Toast.LENGTH_LONG).show();
+                Toast.makeText(adicionarFestival.this, R.string.Saved_message,Toast.LENGTH_LONG).show();
             }
         }
 

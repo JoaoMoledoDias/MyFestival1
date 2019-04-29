@@ -29,7 +29,7 @@ public class DeleteEmployee extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Toast.makeText(DeleteEmployee.this,"Employee Deleted with Sucess",Toast.LENGTH_LONG).show();
+                Toast.makeText(DeleteEmployee.this,R.string.deleted_message,Toast.LENGTH_LONG).show();
             }
         });
     }

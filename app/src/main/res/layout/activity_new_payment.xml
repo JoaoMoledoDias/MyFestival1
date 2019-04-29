@@ -19,7 +19,7 @@
             android:id="@+id/daysoffestival"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Days of Festival" />
+            android:hint="@string/days_of_festival" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -35,7 +35,7 @@
             android:id="@+id/hoursperday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Hours per day" />
+            android:hint="@string/hours_per_day" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -51,7 +51,7 @@
             android:id="@+id/payment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Payment" />
+            android:hint="@string/payment" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -61,7 +61,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="76dp"
         android:onClick="Payment"
-        android:text="Save"
+        android:text="@string/save_payment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
 
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="76dp"
-        android:text="Cancel"
+        android:text="@string/cancel_payment"
         app:layout_constraintStart_toEndOf="@+id/sabenewpayment"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

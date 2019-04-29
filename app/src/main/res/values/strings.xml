@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MyFestival</string>
     <string name="my_festival">My_Festival</string>
     <string name="pagamentos">Payments</string>
@@ -12,7 +12,7 @@
     <string name="cancelar">Cancel</string>
     <string name="nome_do_festival">Festival Name</string>
     <string name="message_error">Required Field</string>
-    <string name="Save_message">Saved Festival With Sucess</string>
+    <string name="Save_message">Saved With Success</string>
     <string name="edit">edit</string>
     <string name="delete">delete</string>
     <string name="canceled">Canceled</string>
@@ -20,5 +20,25 @@
     <string name="end_date">End Date</string>
     <string name="festival_venue">Festival Venue</string>
     <string name="festival_name">Festival Name</string>
-    <string name="messageedited">Edited with sucess</string>
+    <string name="messageedited">Edited with success</string>
+    <string name="name" tools:ignore="DuplicateDefinition">Name</string>
+    <string name="adress" tools:ignore="DuplicateDefinition">Address</string>
+    <string name="e_mail" tools:ignore="MissingTranslation" translatable="false">E-mail</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save" tools:ignore="DuplicateDefinition">Save</string>
+    <string name="cancel" tools:ignore="DuplicateDefinition">Cancel</string>
+    <string name="add_new_employee">Add New Employee</string>
+    <string name="edit_employee">Edit</string>
+    <string name="delete_employee">Delete</string>
+    <string name="add_new_payment">Add New Payment</string>
+    <string name="edit_payment">Edit</string>
+    <string name="delete_paymnet">Delete</string>
+    <string name="days_of_festival" tools:ignore="DuplicateDefinition">Days of Festival</string>
+    <string name="hours_per_day" tools:ignore="DuplicateDefinition">Hours per Day</string>
+    <string name="payment" tools:ignore="DuplicateDefinition">Payment</string>
+    <string name="save_payment">Save</string>
+    <string name="cancel_payment">Cancel</string>
+    <string name="Edited_message">Edited with Success</string>
+    <string name="deleted_message"> Deleted With Success</string>
+    <string name="Saved_message">Saved With Success</string>
 </resources>

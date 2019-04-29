@@ -29,7 +29,7 @@ public class DeletePayment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Toast.makeText(DeletePayment.this,"Payment Deleted With Sucess",Toast.LENGTH_LONG).show();
+                Toast.makeText(DeletePayment.this, R.string.deleted_message,Toast.LENGTH_LONG).show();
             }
         });
     }

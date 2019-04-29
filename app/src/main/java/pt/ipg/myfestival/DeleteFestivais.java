@@ -87,7 +87,7 @@ public class DeleteFestivais extends AppCompatActivity {
     }
     public void DeleteFestival(View view){
         finish();
-        Toast.makeText(DeleteFestivais.this,"Festival Deleted wiht sucess",Toast.LENGTH_LONG).show();
+        Toast.makeText(DeleteFestivais.this,R.string.deleted_message,Toast.LENGTH_LONG).show();
     }
 }
 
